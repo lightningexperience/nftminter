@@ -1,10 +1,10 @@
 import { pinJSONToIPFS } from './pinata.js';
 require('dotenv').config();
-const alchemyKey = process.env.REACT_APP_ALCHEMY_KEY;
+const alchemyKey = process.env.https://eth-ropsten.alchemyapi.io/v2/_AwT98lqL5AWEYxOwuV_gOZmUQPX5xJU;
 const contractABI = require('../contract-abi.json');
 const contractAddress = '0x4C4a07F737Bf57F6632B6CAB089B78f62385aCaE';
 const { createAlchemyWeb3 } = require('@alch/alchemy-web3');
-const web3 = createAlchemyWeb3(alchemyKey);
+const web3 = createAlchemyWeb3("https://eth-ropsten.alchemyapi.io/v2/_AwT98lqL5AWEYxOwuV_gOZmUQPX5xJU");
 
 export const connectWallet = async () => {
 	if (window.ethereum) {
